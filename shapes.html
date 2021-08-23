@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Geometric shapes</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Geometric shapes</h1>
+    </header>
+
+    <section id="square">
+        <h2>Calculate perimeter and area of square</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-A0KP9UQShVn70QJ1mDgNEeXSJ7SIknb0NrUJBcJJPEHiVdbmQIjRyIIXKZV77KEBDts&usqp=CAU">
+        <form action="">
+            <label>size square side</label>
+            <input id="SquareInput" type="number" />
+
+            <button type="button" onclick="CalculateSquarePerimeter()">
+                Calculate perimeter
+            </button>
+
+            <button type="button" onclick="CalculateSquareArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
+    <section id="triangle">
+        <h2>Calculate perimeter and area of triangle</h2>
+        
+        <img src="https://ekuatio.com/wp-content/uploads/triangulo-30.png" >
+        <form action="">
+            <label>size of triangle side 1</label>
+            <input id="TriangleInput1" type="number" />
+
+            <label>size of triangle side 2</label>
+            <input id="TriangleInput2" type="number" />
+
+            <label>size of triangle side 3</label>
+            <input id="TriangleInput3" type="number" />
+
+            <label>size of triangle base</label>
+            <input id="TriangleInputB" type="number" />
+
+            <label>size of triangle height</label>
+            <input id="TriangleInputH" type="number" />
+
+            <button type="button" onclick="CalculateTrianglePerimeter()">
+                Calculate perimeter
+            </button>
+
+            <button type="button" onclick="CalculateTriangleArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
+    <section id="circle">
+        <h2>Calculate perimeter and area of circle</h2>
+        <img src="https://estudianteo.com/wp-content/uploads/2019/12/download-1.png" >
+        <form action="">
+            <label>Circle radius</label>
+            <input id="CircleInput" type="number" />
+           
+
+            <button type="button" onclick="CalculateCirclePerimeter()">
+                Calculate perimeter
+            </button>
+
+            <button type="button" onclick="CalculateCircleArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
+    <script src="./shapes.js"></script>
+
+</body>
+
+</html>

@@ -1,10 +1,12 @@
 body{
-    background-color:  #f0b27a ;
+    background-color:  #8453bd ;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #titulo{
     text-align: center;
+    font-family: cursive;
+    color:rgb(241, 189, 44)
 }
 
 img{
@@ -14,13 +16,13 @@ img{
 section{
     text-align: center;
     padding: 1em;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     margin:inherit;
-    background-color: rgb(103, 101, 224);
+    background-color: rgb(106, 164, 168);
     width: 24em;
     height: auto;
-    display:inline-table;
+    display:inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -30,12 +32,13 @@ h2{
 }
 
 button {
-    background-color:  #e67e22 ;
+    background-color:  #8453bd ;
     border: none;
     color: white;
-    padding: 1em;
+    padding: 0.7em;
+    border-radius: 10px;
     margin: auto;
-    margin-top: 0.6em;
+    margin-top: 0.9em;
     text-align: center;
     text-decoration: none;
     font-size: 12px;

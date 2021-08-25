@@ -28,15 +28,27 @@ section{
     border-radius: 10px;
     margin: 0.5em;
     background-color: rgb(106, 164, 168);
-    width: 24em;
+    width: auto;
     height: auto;
-    display:inline-block;
-    align-items: center;
-    justify-content: center;
+    display:inline-table;
 }
+
 
 h2{
     font-size: 1em;
+    display: inline-block;
+}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+}
+
+form label{
+    margin-top: 1em;
+	display:inline-block;
 }
 
 button {
@@ -46,10 +58,15 @@ button {
     padding: 0.7em;
     border-radius: 10px;
     margin: auto;
-    margin-top: 0.9em;
+    margin-top: 2em;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
     display: flex;
     position: relative;
+}
+
+#Message{
+    color: rgb(134, 0, 134);
+    font-weight: bold;
 }

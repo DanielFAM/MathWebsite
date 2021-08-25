@@ -37,7 +37,6 @@ function TriangleHeight (Side1, Side2, Side3){
     else{
         res = 'No es un triangulo Isoceles';
     }
-
     return res;
 }
    
@@ -59,70 +58,50 @@ function circleArea (radius) {
 
 //square actions
 function CalculateSquareArea() {
-    const input = document.getElementById("SquareInput");
-    const value = input.value;
-    const area = squareArea(value);
+    const input = document.getElementById("SquareInput").value;
+    const area = squareArea(input);
     alert(area);
 }
 
 function CalculateSquarePerimeter() {
-    const input = document.getElementById("SquareInput");
-    const value = input.value;
-    const perimeter = squarePerimeter(value);
+    const input = document.getElementById("SquareInput").value;
+    const perimeter = squarePerimeter(input);
     alert(perimeter);
 }
 
 //triangle actions
 function CalculateTriangleArea() {
-    const inputB = document.getElementById("TriangleInputB");
-    const inputH = document.getElementById("TriangleInputH");
-
-    const valueB = inputB.value;
-    const valueH = inputH.value;
-
-    const area = triangleArea(valueB,valueH);
+    const inputB = document.getElementById("TriangleInputB").value;
+    const inputH = document.getElementById("TriangleInputH").value;
+    const area = triangleArea(inputB,inputH);
     alert(area);
 }
 
 function CalculateTrianglePerimeter() {
-    const input1 = document.getElementById("TriangleInput1");
-    const input2 = document.getElementById("TriangleInput2");
-    const input3 = document.getElementById("TriangleInput3");
-
-    const value1 = parseInt(input1.value);
-    const value2 = parseInt(input2.value);
-    const value3 = parseInt(input3.value);
-
-    const perimeter = trianglePerimeter(value1,value2,value3);
+    const input1 = Number(document.getElementById("TriangleInput1").value);
+    const input2 = Number(document.getElementById("TriangleInput2").value);
+    const input3 = Number(document.getElementById("TriangleInput3").value);
+    const perimeter = trianglePerimeter(input1,input2,input3);
     alert(perimeter);
 }
 
 //circle actions
 function CalculateCirclePerimeter() {
-    const input = document.getElementById("CircleInput");
-    const value = input.value;
-
-    const perimeter = circlePerimeter(value);
+    const input = document.getElementById("CircleInput").value;
+    const perimeter = circlePerimeter(input);
     alert(perimeter);
 }
 
 function CalculateCircleArea() {
-    const input = document.getElementById("CircleInput");
-    const value = input.value;
-
-    const area = circleArea(value);
+    const input = document.getElementById("CircleInput").value;
+    const area = circleArea(input);
     alert(area);
 }
 
 function CalculateTriangleHeight (){
-    const input1 = document.getElementById("TriangleIInput1");
-    const input2 = document.getElementById("TriangleIInput2");
-    const input3 = document.getElementById("TriangleIInput3");
-
-    const value1 = parseInt(input1.value);
-    const value2 = parseInt(input2.value);
-    const value3 = parseInt(input3.value);
-
-    const height = TriangleHeight(value1,value2,value3);
+    const input1 = document.getElementById("TriangleIInput1").value;
+    const input2 = document.getElementById("TriangleIInput2").value;
+    const input3 = document.getElementById("TriangleIInput3").value;
+    const height = TriangleHeight(input1,input2,input3);
     alert(height);
 }

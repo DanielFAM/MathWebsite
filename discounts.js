@@ -11,7 +11,7 @@ function PriceDiscount ()
     const value2 = document.getElementById("InputDiscount").value;
 
     const discount = calculateDiscount(value, value2);
-    Message.innerText = "The price with discount is: "+discount+"$";
+    Message1.innerText = "The price with discount is: "+discount+"$";
 }
 
 const coupons = [
@@ -30,19 +30,18 @@ const coupons = [
 ];
 
 function CouponDiscount() {
-    const inputPrice = document.getElementById("InputPrice").value;
+    const inputPrice = document.getElementById("InputPrice2").value;
     const inputCoupon = document.getElementById("InputCoupon").value;
 
     
     const userCoupon = coupons.find(element => element.name === inputCoupon);
     
     if (!userCoupon) {
-        alert("El cupón " + inputCoupon + " no es válido");
+        alert("The coupon (" + inputCoupon + ") is not valid.");
     }else{
-        const descuento = userCoupon.discount;
-        const precioConDescuento = calculateDiscount(inputPrice, descuento);
+        const discount = userCoupon.discount;
+        const finalPrice = calculateDiscount(inputPrice, discount);
     
-        Message2.innerText = "El precio con descuento son: $" + precioConDescuento;
+        Message2.innerText = "The price with discount is: $" + finalPrice;
     }
 }
-

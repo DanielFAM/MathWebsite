@@ -60,13 +60,13 @@ function circleArea (radius) {
 function CalculateSquareArea() {
     const input = document.getElementById("SquareInput").value;
     const area = squareArea(input);
-    alert(area);
+    SquareM.innerText = "The area of the square is " + area+"cm²";
 }
 
 function CalculateSquarePerimeter() {
     const input = document.getElementById("SquareInput").value;
     const perimeter = squarePerimeter(input);
-    alert(perimeter);
+    SquareM.innerText = "The perimeter of the square is " + perimeter+"cm";
 }
 
 //triangle actions
@@ -74,7 +74,7 @@ function CalculateTriangleArea() {
     const inputB = document.getElementById("TriangleInputB").value;
     const inputH = document.getElementById("TriangleInputH").value;
     const area = triangleArea(inputB,inputH);
-    alert(area);
+    TriangleM.innerText = "The area of the triangle is " + area+"cm²";
 }
 
 function CalculateTrianglePerimeter() {
@@ -82,20 +82,20 @@ function CalculateTrianglePerimeter() {
     const input2 = Number(document.getElementById("TriangleInput2").value);
     const input3 = Number(document.getElementById("TriangleInput3").value);
     const perimeter = trianglePerimeter(input1,input2,input3);
-    alert(perimeter);
+    TriangleM.innerText = "The perimeter of the triangle is " + perimeter+"cm";
 }
 
 //circle actions
 function CalculateCirclePerimeter() {
     const input = document.getElementById("CircleInput").value;
     const perimeter = circlePerimeter(input);
-    alert(perimeter);
+    CircleM.innerText = "The perimeter of the circle is " + perimeter+"cm";
 }
 
 function CalculateCircleArea() {
     const input = document.getElementById("CircleInput").value;
     const area = circleArea(input);
-    alert(area);
+    CircleM.innerText = "The area of the circle is " + area+"cm²";
 }
 
 function CalculateTriangleHeight (){
@@ -103,5 +103,5 @@ function CalculateTriangleHeight (){
     const input2 = document.getElementById("TriangleIInput2").value;
     const input3 = document.getElementById("TriangleIInput3").value;
     const height = TriangleHeight(input1,input2,input3);
-    alert(height);
+    IsoscelesM.innerText = "The height of triangle is " + height+"cm";
 }

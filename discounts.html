@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./discounts.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Percentages and discounts</title>
 </head>
 <body>
@@ -25,10 +25,10 @@
             <input id="InputDiscount" type="number">
 
             <button type="button" onclick="PriceDiscount()">
-                Calculate the price with discount
+                Calculate the final price
             </button>
             
-            <p id="Message"></p>
+            <p id="Message1" class="Message"></p>
 
         </form>
     </section>
@@ -36,17 +36,17 @@
     <section>
         <h2>Calculate the price of products with discount coupons</h2>
         <form>
-            <label for="InputPrice">Input the price of your product:</label>
-            <input id="InputPrice" type="number">
+            <label for="InputPrice2">Input the price of your product:</label>
+            <input id="InputPrice2" type="number">
 
             <label for="InputCoupon">Input the coupon:</label>
             <input id="InputCoupon" type="text">
 
             <button type="button" onclick="CouponDiscount()">
-                Calculate the price
+                Calculate the final price
             </button>
             
-            <p id="Message2"></p>
+            <p id="Message2" class="Message"></p>
 
         </form>
     </section>
